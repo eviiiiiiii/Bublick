@@ -1,0 +1,29 @@
+body {
+    font-family: sans-serif;
+    background: #f2f2f2;
+    margin: 0;
+    padding: 0;
+}
+
+nav {
+    background: #333;
+    padding: 10px;
+}
+nav a {
+    color: white;
+    margin-right: 15px;
+    text-decoration: none;
+}
+.content {
+    padding: 20px;
+}
+.columns {
+    display: flex;
+    gap: 20px;
+}
+.column {
+    background: white;
+    padding: 10px;
+    border-radius: 5px;
+    width: 200px;
+}

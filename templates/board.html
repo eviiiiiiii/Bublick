@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+{% block title %}{{ board.title }}{% endblock %}
+{% block content %}
+<h2>{{ board.title }}</h2>
+<div class="columns">
+    {% for column_name, cards in board.columns.items() %}
+    <div class="column">
+        <h3>{{ column_name }}</h3>
+        <ul>
+            {% for card in cards %}
+                <li>{{ card }}</li>
+            {% endfor %}
+        </ul>
+        <form method="post">
+            <input type="text" name="card" placeholder="Новая карточка">
+            <button>Добавить</button>
+        </form>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}

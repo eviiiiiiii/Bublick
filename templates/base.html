@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Trello Clone{% endblock %}</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <nav>
+        <a href="{{ url_for('index') }}">Главная</a>
+        <a href="{{ url_for('profile') }}">Профиль</a>
+        <a href="{{ url_for('settings') }}">Настройки</a>
+    </nav>
+    <div class="content">
+        {% block content %}{% endblock %}
+    </div>
+</body>
+</html>
